@@ -3,16 +3,16 @@
     public interface IMovieRepository<TEntity>
     {
 
-        Task<IEnumerable<TEntity>> Get();
+        public Task<IEnumerable<TEntity>> Get();
 
-        Task<TEntity> GetById(int id);
+        public Task<TEntity> GetById(int id);
 
-        Task Add(TEntity entity);
+        public Task Add(TEntity entity);
 
-        Task Update(TEntity entity);
+        public Task Update(TEntity entity);
 
-        void Delete(TEntity entity);
+        public void Delete(TEntity entity);
 
-        Task Save();
+        public Task Save();
     }
 }
