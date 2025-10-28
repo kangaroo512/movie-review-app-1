@@ -44,7 +44,7 @@ The API is currently deployed on **Render**:
 
 ## 🗂️ Project Structure
 
-```
+```bash
 Movie Review API/
 │
 ├── Controllers/
