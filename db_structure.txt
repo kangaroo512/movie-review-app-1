@@ -1,0 +1,33 @@
+Enum MovieRating {
+  G
+  PG
+  PG_13
+  R
+  NC_17
+}
+
+Table Movie {
+  id int [primary key]
+  title string
+  description string
+  releaseDate date
+  director string
+  durationMinutes int
+  rating MovieRating
+  createdAt timestamp
+  updatedAt timestamp
+  
+}
+
+Table Review {
+  id int [primary key]
+  movie int
+  authorName string
+  rating int
+  comment text
+  createdAt timestamp
+  updatedAt timestamp
+
+}
+
+Ref: Movie.id < Review.movie
